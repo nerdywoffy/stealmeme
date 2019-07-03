@@ -1,3 +1,5 @@
+// if you checked "fancy-settings" in extensionizr.com, uncomment this lines
+
 const STEAL_MEME_ID = "stealmeme"
 
 
@@ -13,7 +15,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
     chrome.downloads.download({
       url: info.srcUrl,
       conflictAction: 'uniquify',
-      saveAs: false,
+      saveAs: (localStorage['store.settings.askPlaceBeforeSteal'] === "true"),
       method: 'GET'
     }, (id) => {
       console.log('Downloading memes with DownloadID', id)

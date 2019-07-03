@@ -2,7 +2,7 @@
   "name": "Steal Meme",
   "version": "1.0.0",
   "manifest_version": 2,
-  "description": "Steal the Meme, that's all ¯\_(ツ)_/¯",
+  "description": "Steal the Meme, that's all ¯\\_(ツ)_/¯",
   "homepage_url": "https://github.com/nerdywoffy/stealmeme",
   "icons": {
     "16": "icons/icon16.png",
